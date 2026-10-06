@@ -1,0 +1,36 @@
+{
+    "browser_info": {
+        "name": "Vera Secure Browser",
+        "version": "1.0.0",
+        "target_environment": "Schools & Military Facilities"
+    },
+    "security_policies": {
+        "ephemeral_mode": true,
+        "block_cache": true,
+        "block_cookies": true,
+        "disable_password_manager": true,
+        "disable_auto_fill": true,
+        "force_sandbox": true,
+        "disable_developer_tools": true
+    },
+    "access_control": {
+        "mode": "blacklist",
+        "blacklist": [
+            "*.socialmedia.com",
+            "*.gaming-portal.com",
+            "*.stream-entertainment.com",
+            "chat.openai.com"
+        ],
+        "whitelist": [
+            "meb.gov.tr",
+            "eba.gov.tr",
+            "*.edu.tr",
+            "msb.gov.tr"
+        ]
+    },
+    "admin_controls": {
+        "session_timeout_minutes": 30,
+        "master_unlock_pin_hash": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+        "kill_switch_endpoint": "https://vera-admin.local/api/v1/kill"
+    }
+}
